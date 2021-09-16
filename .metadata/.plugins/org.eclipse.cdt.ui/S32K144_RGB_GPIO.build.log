@@ -1,0 +1,11 @@
+23:43:47 **** Incremental Build of configuration Debug_FLASH for project S32K144_RGB_GPIO ****
+make -j8 all 
+Building target: S32K144_RGB_GPIO.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_RGB_GPIO.elf" "@S32K144_RGB_GPIO.args"   
+c:/nxp/s32ds.3.3/s32ds/build_tools/gcc_v9.2/gcc-9.2-arm32-eabi/bin/../lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/real-ld.exe: ./src/pin_n_clocks.o:D:\git_projects\S32K144_Projects\S32K144_RGB_GPIO\Debug_FLASH/../src/pin_n_clocks.h:28: multiple definition of `ptr_func'; ./src/main.o:D:\git_projects\S32K144_Projects\S32K144_RGB_GPIO\Debug_FLASH/../src/pin_n_clocks.h:28: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:36: S32K144_RGB_GPIO.elf] Error 1
+
+23:43:48 Build Finished (took 577ms)
+

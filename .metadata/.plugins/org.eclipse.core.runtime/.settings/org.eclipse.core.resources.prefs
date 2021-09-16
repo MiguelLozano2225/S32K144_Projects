@@ -1,0 +1,6 @@
+description.autobuilding=false
+eclipse.preferences.version=1
+pathvariable.AMMCLIB_S32K11X_1_1_20_PATH=C\:/NXP/S32DS.3.3/S32DS/software/AMMCLIB_v1.1.20/S32K11x_AMMCLIB_v1.1.20
+pathvariable.AMMCLIB_S32K14X_1_1_20_PATH=C\:/NXP/S32DS.3.3/S32DS/software/AMMCLIB_v1.1.20/S32K14x_AMMCLIB_v1.1.20
+pathvariable.FREEMASTER_S32XX_2_0_0_PATH=C\:/NXP/S32DS.3.3/S32DS/software/FreeMASTER_Serial_Communication_Driver_V2_0
+version=1

@@ -1,0 +1,43 @@
+/*
+ * pin_n_clock.c
+ *
+ *  Created on: Jun 21, 2021
+ *      Author: migue
+ */
+
+#include "pin_n_clock.h"
+#include "My_led_n_sw.h"
+
+void delay (void)
+{
+	int a= 5000000;
+	while(a--);
+}
+
+void Init_clocks(MyClocks_en Clock)
+{
+	PCC-> PCCn[Clock] = PCC_PCCn_CGC_MASK; /* Enable clock to PORT C*/
+}
+
+
+void LedGreen(void)
+{
+	LED_GREEN_ON;
+	delay();
+	LED_GREEN_OFF;
+}
+
+void LedBlue(void)
+{
+	LED_BLUE_ON;
+	delay();
+	LED_BLUE_OFF;
+
+}
+
+void LedRed(void)
+{
+	LED_RED_ON;
+	delay();
+	LED_RED_OFF;
+}

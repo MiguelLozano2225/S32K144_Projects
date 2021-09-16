@@ -1,0 +1,16 @@
+/*
+ * NVIC.h
+ *
+ *  Created on: Jun 25, 2021
+ *      Author: migue
+ */
+
+#ifndef NVIC_H_
+#define NVIC_H_
+
+#include "S32K144.h"
+
+void EnableNVIC(uin8_t IRQn);
+void DisableNVIC(uin8_t IRQn);
+void SetPriority(uin8_t IRQn, uint8_t Prio);
+#endif /* NVIC_H_ */

@@ -1,0 +1,283 @@
+23:06:40 **** Clean-only build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 clean 
+rm -rf ./*
+ 
+17:01:45 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+In file included from ../src/NVIC.c:9:
+D:/git_projects/S32K144_Projects/S32K144_GPIO_IRQ/include/NVIC.h:13:21: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   13 | void NVIC_EnableIRQ(uin8_t IRQn);
+      |                     ^~~~~~
+      |                     uint8_t
+D:/git_projects/S32K144_Projects/S32K144_GPIO_IRQ/include/NVIC.h:14:27: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   14 | void NVIC_ClearPendingIRQ(uin8_t IRQn);
+      |                           ^~~~~~
+      |                           uint8_t
+D:/git_projects/S32K144_Projects/S32K144_GPIO_IRQ/include/NVIC.h:15:22: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   15 | void NVIC_DisableIRQ(uin8_t IRQn);
+      |                      ^~~~~~
+      |                      uint8_t
+D:/git_projects/S32K144_Projects/S32K144_GPIO_IRQ/include/NVIC.h:16:23: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   16 | void NVIC_SetPriority(uin8_t IRQn, uint8_t Prio);
+      |                       ^~~~~~
+      |                       uint8_t
+../src/NVIC.c:11:21: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   11 | void NVIC_EnableIRQ(uin8_t IRQn)
+      |                     ^~~~~~
+      |                     uint8_t
+../src/NVIC.c:17:27: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   17 | void NVIC_ClearPendingIRQ(uin8_t IRQn)
+      |                           ^~~~~~
+      |                           uint8_t
+../src/NVIC.c:22:22: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   22 | void NVIC_DisableIRQ(uin8_t IRQn)
+      |                      ^~~~~~
+      |                      uint8_t
+../src/NVIC.c:27:23: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   27 | void NVIC_SetPriority(uin8_t IRQn, uint8_t Prio)
+      |                       ^~~~~~
+      |                       uint8_t
+make: *** [src/subdir.mk:26: src/NVIC.o] Error 1
+17:01:46 **** Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Building file: ../src/main.c
+Building file: ../src/pin_n_clock.c
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Building file: ../Project_Settings/Startup_Code/startup_S32K144.S
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup.args" -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Building file: ../Project_Settings/Startup_Code/system_S32K144.c
+arm-none-eabi-gcc "@src/main.args" -MMD -MP -MF"src/pin_n_clock.d" -MT"src/pin_n_clock.o" -o "src/pin_n_clock.o" "../src/pin_n_clock.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup.args" -MMD -MP -MF"Project_Settings/Startup_Code/system_S32K144.d" -MT"Project_Settings/Startup_Code/system_S32K144.o" -o "Project_Settings/Startup_Code/system_S32K144.o" "../Project_Settings/Startup_Code/system_S32K144.c"
+Invoking: Standard S32DS Assembler
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup_S32K144.args" -o "Project_Settings/Startup_Code/startup_S32K144.o" "../Project_Settings/Startup_Code/startup_S32K144.S"
+Finished building: ../Project_Settings/Startup_Code/startup_S32K144.S
+Finished building: ../Project_Settings/Startup_Code/startup.c
+Finished building: ../src/main.c
+Finished building: ../Project_Settings/Startup_Code/system_S32K144.c
+ 
+Finished building: ../src/pin_n_clock.c
+ 
+ 
+ 
+ 
+Building target: S32K144_GPIO_RGB.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_RGB.elf" "@S32K144_GPIO_RGB.args"   
+Finished building target: S32K144_GPIO_RGB.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:02:15 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:11:21: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   11 | void NVIC_EnableIRQ(uin8_t IRQn)
+      |                     ^~~~~~
+      |                     uint8_t
+../src/NVIC.c:17:27: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   17 | void NVIC_ClearPendingIRQ(uin8_t IRQn)
+      |                           ^~~~~~
+      |                           uint8_t
+../src/NVIC.c:22:22: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   22 | void NVIC_DisableIRQ(uin8_t IRQn)
+      |                      ^~~~~~
+      |                      uint8_t
+../src/NVIC.c:27:23: error: unknown type name 'uin8_t'; did you mean 'uint8_t'?
+   27 | void NVIC_SetPriority(uin8_t IRQn, uint8_t Prio)
+      |                       ^~~~~~
+      |                       uint8_t
+make: *** [src/subdir.mk:26: src/NVIC.o] Error 1
+17:02:16 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:02:27 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+Finished building: ../src/NVIC.c
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2432	   1060	   2080	   5572	   15c4	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:02:28 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:03:12 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2432	   1060	   2080	   5572	   15c4	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:03:13 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:03:42 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2480	   1060	   2080	   5620	   15f4	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:03:43 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:04:27 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2480	   1060	   2080	   5620	   15f4	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:04:27 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:04:32 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2480	   1060	   2080	   5620	   15f4	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:07:23 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+Finished building: ../src/NVIC.c
+Finished building: ../src/main.c
+ 
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2484	   1060	   2080	   5624	   15f8	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:07:25 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+17:07:30 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2484	   1060	   2080	   5624	   15f8	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:08:20 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/NVIC.c
+Finished building: ../src/main.c
+ 
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2484	   1060	   2080	   5624	   15f8	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+17:08:21 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 

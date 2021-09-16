@@ -1,0 +1,23 @@
+/*
+ * NVIC.c
+ *
+ *  Created on: Jun 25, 2021
+ *      Author: migue
+ */
+
+
+#include "NVIC.h"
+
+void NVIC_EnableIRQ(uin8_t IRQn)
+{
+	S32_NVIC->ICPR[IRQn] = 1 << (IRQn % 32U);
+	S32_NVIC->ISER[IRQn] = 1 << (IRQn % 32U);
+}
+void NVIC_DisableIRQ(uin8_t IRQn)
+{
+	S32_NVIC->ICER[IRQn/4U] = 1 << (IRQn % 32U);
+}
+void NVIC_SetPriority(uin8_t IRQn, uint8_t Prio)
+{
+
+}

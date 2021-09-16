@@ -1,0 +1,11 @@
+21:23:43 **** Incremental Build of configuration Debug_FLASH for project S32K144_GPIO_SW_LED ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_SW_LED.elf
+   text	   data	    bss	    dec	    hex	filename
+   2532	   1060	   3104	   6696	   1a28	S32K144_GPIO_SW_LED.elf
+Finished building: S32K144_GPIO_SW_LED.siz
+ 
+
+21:23:43 Build Finished (took 467ms)
+

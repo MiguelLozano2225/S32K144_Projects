@@ -1,0 +1,26 @@
+17:08:20 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_IRQ ****
+make -j8 all 
+Building file: ../src/NVIC.c
+Building file: ../src/main.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -o "src/NVIC.o" "../src/NVIC.c"
+arm-none-eabi-gcc "@src/NVIC.args" -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/NVIC.c
+Finished building: ../src/main.c
+ 
+ 
+Building target: S32K144_GPIO_IRQ.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144_GPIO_IRQ.elf" "@S32K144_GPIO_IRQ.args"   
+Finished building target: S32K144_GPIO_IRQ.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_IRQ.elf
+   text	   data	    bss	    dec	    hex	filename
+   2484	   1060	   2080	   5624	   15f8	S32K144_GPIO_IRQ.elf
+Finished building: S32K144_GPIO_IRQ.siz
+ 
+
+17:08:21 Build Finished (took 1s.471ms)
+

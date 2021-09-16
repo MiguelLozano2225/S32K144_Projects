@@ -1,0 +1,11 @@
+17:08:21 **** Incremental Build of configuration Debug_RAM for project S32K144_GPIO_RGB ****
+make -j8 all 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley S32K144_GPIO_RGB.elf
+   text	   data	    bss	    dec	    hex	filename
+   2596	   1060	   2080	   5736	   1668	S32K144_GPIO_RGB.elf
+Finished building: S32K144_GPIO_RGB.siz
+ 
+
+17:08:22 Build Finished (took 313ms)
+

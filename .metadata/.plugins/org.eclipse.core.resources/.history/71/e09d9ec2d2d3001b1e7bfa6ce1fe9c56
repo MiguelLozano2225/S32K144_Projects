@@ -1,0 +1,13 @@
+/*
+ * main implementation: use this 'C' sample to create your own application
+ *
+ */
+#include "S32K144.h"
+
+int main(void)
+{
+	Init_clocks(PORT_C);
+	Init_clocks(PORT_D);
+
+	return 0;
+}

@@ -1,0 +1,35 @@
+/*
+ * main implementation: use this 'C' sample to create your own application
+ *
+ */
+#include "S32K144.h"
+#include "pin_n_clock.h"
+#include "My_led_n_sw.h"
+
+int main(void)
+{
+	Init_clocks(PORT_C);
+	Init_clocks(PORT_D);
+
+	PORTC->PCR[12] |= PORT_PCR_MUX(1)
+					| PORT_PCR_IRQC(0b1100);
+
+	S32_NVIC->ICPR[PORTC_IRQn] |= 1<< (PORTC_IRQn %32);
+	S32_NVIC->ISER[PORTC_IRQn] |= 1<< (PORTC_IRQn %32);
+	S32_NVIC->IP[PORTC_IRQn] = 1;
+
+	for(;;)
+	{
+
+	}
+
+	return 0;
+}
+
+void PORTC_IRQHandler (void)
+{
+
+	PORTC->PCR[12] |= PORT_PCR_ISF_MASK;
+
+	LED_BLUE_ON;
+}

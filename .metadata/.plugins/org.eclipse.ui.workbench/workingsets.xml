@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624333157191_2" label="S32K144_GPIO_SW_LED" name="S32K144_GPIO_SW_LED">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_SW_LED" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624334336877_3" label="S32K144_GPIO_RGB" name="S32K144_GPIO_RGB">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_RGB" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624418592304_3" label="S32K144_GPIO_IRQ" name="S32K144_GPIO_IRQ">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_IRQ" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1623601950749_0" label="Window Working Set" name="Aggregate for window 1623601950749"/>
+</workingSetManager>
