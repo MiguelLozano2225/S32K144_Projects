@@ -1,11 +1,15 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO.elf,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB.elf,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_Debug_FLASH_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_Release_FLASH_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_Release_RAM_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_Debug_FLASH_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_Debug_RAM_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_Release_FLASH_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_Release_RAM_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_Debug_RAM_Segger
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO.elf,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB.elf,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_StateMachine_Debug_RAM_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_StateMachine_Release_FLASH_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_StateMachine_Release_RAM_Segger,org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_StateMachine_Debug_FLASH_Segger
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_Debug_RAM_Segger/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_IRQ_NVIC_Debug_FLASH_Segger/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_Polling_Debug_RAM_Segger/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB.elf/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:S32K144_GPIO_RGB_StateMachine_Debug_FLASH_Segger/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO.elf/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO_Debug_FLASH_Segger/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:S32K144_RGB_GPIO_Debug_FLASH_Segger/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:caliz_Debug_FLASH_PNE/activeLaunchMode=debug

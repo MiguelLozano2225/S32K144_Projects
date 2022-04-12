@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="Default C source template" key="LastUsedSourceTemplate"/>
-	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<item key="LastUsedSourceTemplate" value="Default C source template"/>
+	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="PDOMSearchPage">
-		<item value="false" key="caseSensitive"/>
-		<item value="227191" key="searchFlags"/>
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
 		<list key="previousPatterns">
 			<item value="handler"/>
 			<item value="void*ptr_funcvoid"/>

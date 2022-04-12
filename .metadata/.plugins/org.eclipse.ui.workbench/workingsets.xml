@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624333157191_2" label="S32K144_GPIO_SW_LED" name="S32K144_GPIO_SW_LED">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_SW_LED" type="4"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649777441573_4" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649777441573_5" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649779811772_8" label="S32K144_GPIO_IRQ_NVIC" name="S32K144_GPIO_IRQ_NVIC">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_IRQ_NVIC" type="4"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624334336877_3" label="S32K144_GPIO_RGB" name="S32K144_GPIO_RGB">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_RGB" type="4"/>
+<workingSet factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649780020005_9" label="S32K144_GPIO_Polling" name="S32K144_GPIO_Polling">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_Polling" type="4"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1624418592304_3" label="S32K144_GPIO_IRQ" name="S32K144_GPIO_IRQ">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_IRQ" type="4"/>
+<workingSet factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649780164510_10" label="S32K144_GPIO_RGB_StateMachine" name="S32K144_GPIO_RGB_StateMachine">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/S32K144_GPIO_RGB_StateMachine" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1623601950749_0" label="Window Working Set" name="Aggregate for window 1623601950749"/>
 </workingSetManager>
